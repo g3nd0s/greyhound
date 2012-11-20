@@ -9,7 +9,7 @@ def binsearch( array, left, right, key ):
   m = 0
 
   while( left < right ):
-    m = ( left + right ) / 2
+    m = int(( left + right ) / 2)
 
     if ( key < array[m] ):
       right = m
@@ -24,7 +24,7 @@ def main():
   array = []
   array = range(LEFT, RIGHT)
 
-  print binsearch( array, LEFT, RIGHT, KEY )
+  print ( binsearch( array, LEFT, RIGHT, KEY ) )
 
 if __name__=='__main__':
   main()
