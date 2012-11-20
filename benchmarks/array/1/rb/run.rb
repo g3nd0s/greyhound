@@ -8,7 +8,7 @@ RIGHT = 10000000
 def binsearch( array, left, right, key )
   m = nil
 
-  while left < right do
+  while left <= right do
     m = ( left + right ) / 2
     
     if key < array[m]

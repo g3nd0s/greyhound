@@ -14,7 +14,7 @@ sub binsearch
   my ( $ref, $left, $right, $key ) = @_;
   my $m;
   
-  while( $left < $right )
+  while( $left <= $right )
   { 
     $m = int(( $left + $right ) / 2);
 
